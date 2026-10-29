@@ -1,0 +1,31 @@
+{
+  "id": "/",
+  "name": "جوة الحكاية",
+  "short_name": "جوة الحكاية",
+  "description": "مساحة آمنة للكلام والتواصل وطلب الدعم.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f2f4ee",
+  "theme_color": "#334d3c",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "إرسال رسالة",
+      "url": "/"
+    },
+    {
+      "name": "مساحة للاطمئنان على نفسك",
+      "url": "/self-check"
+    }
+  ]
+}

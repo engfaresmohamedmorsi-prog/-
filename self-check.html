@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f4ee">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <script src="/theme.js"></script>
+  <title>جوة الحكاية | مساحة للاطمئنان على نفسك</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/self-check.js" defer></script>
+</head>
+<body>
+  <main class="page-shell self-check-shell">
+    <header class="site-header">
+      <a class="brand" href="/">جوة الحكاية <span lang="en" dir="ltr">Gowa_El_Hekaya</span></a>
+      <nav class="site-nav" aria-label="التنقل">
+        <a class="quiet-link" href="/">إرسال رسالة</a>
+        <a class="quiet-link" href="https://www.tiktok.com/@gowa_el_hekaya" target="_blank" rel="noopener noreferrer">تابعنا على تيك توك</a>
+        <a class="quiet-link" href="/dashboard">لوحة الإدارة</a>
+      </nav>
+    </header>
+
+    <section class="hero-card self-check-card" aria-labelledby="page-title">
+      <div class="self-check-content">
+        <div class="eyebrow">لحظة هادئة لنفسك</div>
+        <h1 id="page-title">كيف كانت أيامك <span>مؤخرًا؟</span></h1>
+        <p class="intro">أسئلة بسيطة تساعدك على ملاحظة ما تشعر به خلال الأسبوعين الماضيين، دون أحكام.</p>
+
+        <div class="notice-card">
+          هذا ليس اختبارًا طبيًا ولا يشخّص الاكتئاب أو أي حالة نفسية. إجاباتك تبقى في هذه الصفحة ولا تُرسل أو تُحفظ.
+        </div>
+
+        <form id="self-check-form" class="check-in-form">
+          <fieldset class="question-card">
+            <legend>كم مرة شعرت بالحزن أو الضيق؟</legend>
+            <div class="answer-options">
+              <label class="answer-option"><input type="radio" name="mood" value="0" required> نادرًا</label>
+              <label class="answer-option"><input type="radio" name="mood" value="1"> أحيانًا</label>
+              <label class="answer-option"><input type="radio" name="mood" value="2"> كثيرًا</label>
+              <label class="answer-option"><input type="radio" name="mood" value="3"> معظم الأيام</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="question-card">
+            <legend>كم مرة قلّ اهتمامك أو استمتاعك بالأشياء المعتادة؟</legend>
+            <div class="answer-options">
+              <label class="answer-option"><input type="radio" name="interest" value="0" required> نادرًا</label>
+              <label class="answer-option"><input type="radio" name="interest" value="1"> أحيانًا</label>
+              <label class="answer-option"><input type="radio" name="interest" value="2"> كثيرًا</label>
+              <label class="answer-option"><input type="radio" name="interest" value="3"> معظم الأيام</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="question-card">
+            <legend>كيف كان نومك أو مستوى طاقتك؟</legend>
+            <div class="answer-options">
+              <label class="answer-option"><input type="radio" name="sleep-energy" value="0" required> بخير غالبًا</label>
+              <label class="answer-option"><input type="radio" name="sleep-energy" value="1"> تغيّر قليلًا</label>
+              <label class="answer-option"><input type="radio" name="sleep-energy" value="2"> تغيّر كثيرًا</label>
+              <label class="answer-option"><input type="radio" name="sleep-energy" value="3"> صعب أغلب الأيام</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="question-card">
+            <legend>إلى أي مدى أثرت هذه المشاعر على يومك أو مسؤولياتك؟</legend>
+            <div class="answer-options">
+              <label class="answer-option"><input type="radio" name="daily-life" value="0" required> لم تؤثر</label>
+              <label class="answer-option"><input type="radio" name="daily-life" value="1"> قليلًا</label>
+              <label class="answer-option"><input type="radio" name="daily-life" value="2"> بشكل واضح</label>
+              <label class="answer-option"><input type="radio" name="daily-life" value="3"> كثيرًا</label>
+            </div>
+          </fieldset>
+
+          <div class="self-check-actions">
+            <button class="primary-button" type="submit">عرض تأمل داعم</button>
+            <button class="text-button" type="reset">مسح الإجابات</button>
+          </div>
+        </form>
+
+        <section id="reflection" class="reflection-card hidden" aria-live="polite" tabindex="-1">
+          <h2>شكرًا لأنك خصصت هذه اللحظة لنفسك</h2>
+          <p id="reflection-text"></p>
+        </section>
+
+        <aside class="crisis-note">
+          <strong>إذا كنت غير آمن الآن:</strong>
+          تواصل فورًا مع شخص تثق به أو مع خدمات الطوارئ المحلية، ولا تبقَ وحدك. وإذا استمر الضيق أو أثّر في حياتك، يمكن لمختص نفسي أو طبيب مساعدتك.
+          <a href="https://wa.me/201039654480" target="_blank" rel="noopener noreferrer">للتواصل مع صاحب صفحة جوة الحكاية عبر واتساب</a>.
+        </aside>
+      </div>
+    </section>
+
+    <footer class="privacy-note">
+      <span class="privacy-icon" aria-hidden="true">✓</span>
+      <p>إجاباتك لا تغادر متصفحك، ولا تُحفظ على الجهاز. يمكنك إغلاق الصفحة أو مسحها في أي وقت.</p>
+    </footer>
+  </main>
+</body>
+</html>

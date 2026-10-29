@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#334d3c">
+  <meta name="description" content="مساحة آمنة من جوة الحكاية لإرسال رسالة والتواصل وطلب الدعم.">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icon.svg">
+  <script src="/theme.js"></script>
+  <title>جوة الحكاية | مساحة آمنة للكلام</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="/">جوة الحكاية <span lang="en" dir="ltr">Gowa_El_Hekaya</span></a>
+      <nav class="site-nav" aria-label="التنقل">
+        <a class="quiet-link" href="/self-check">مساحة للاطمئنان على نفسك</a>
+        <a class="quiet-link" href="https://www.tiktok.com/@gowa_el_hekaya" target="_blank" rel="noopener noreferrer">تابعنا على تيك توك</a>
+        <a class="quiet-link" href="/dashboard">لوحة الإدارة</a>
+      </nav>
+    </header>
+
+    <section class="hero-card" aria-labelledby="page-title">
+      <div class="eyebrow">رسالتك تصل مباشرة</div>
+      <h1 id="page-title">قل ما تريد، <span>بكل راحة.</span></h1>
+      <p class="intro">اكتب رسالتك دون إدخال اسمك أو بريدك الإلكتروني. لن نطلب بيانات تعريفية لإرسالها.</p>
+      <div class="share-row">
+        <span>شارك الصفحة أو أضفها إلى شاشة هاتفك</span>
+        <div class="share-actions">
+          <button id="share-button" class="secondary-button" type="button">مشاركة الرابط</button>
+          <button id="install-button" class="secondary-button install-button" type="button">تثبيت اختصار</button>
+        </div>
+      </div>
+      <p id="install-status" class="install-status" role="status" aria-live="polite"></p>
+
+      <form id="message-form">
+        <label for="message">رسالتك</label>
+        <textarea id="message" name="message" maxlength="1000" rows="7" placeholder="اكتب رسالتك هنا..." required></textarea>
+        <div class="field-meta">
+          <span id="char-count">0 / 1000</span>
+          <span>لا تضف معلومات شخصية حساسة.</span>
+        </div>
+        <label class="consent-row" for="consent">
+          <input id="consent" name="consent" type="checkbox" required>
+          <span>أفهم أن محتوى رسالتي سيُرسل لصاحب الموقع ويُحفظ في لوحة خاصة إلى أن يحذفه.</span>
+        </label>
+        <button class="primary-button" type="submit">إرسال الرسالة <span aria-hidden="true">←</span></button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <footer class="privacy-note">
+      <span class="privacy-icon" aria-hidden="true">✓</span>
+      <p><strong>خصوصيتك مهمة.</strong> لا يطلب التطبيق اسمك أو بريدك ولا يرفق عنوان IP بالرسالة. قد يحتفظ مزوّد الاستضافة بسجلات اتصال منفصلة. تُخزّن الرسالة في لوحة خاصة، ويمكن لصاحب الموقع قراءتها وحذفها.</p>
+    </footer>
+    <footer class="contact-card">
+      <div>
+        <div class="eyebrow">لسنا وحدك</div>
+        <h2>تحتاج أن تتكلم مع أحد؟</h2>
+        <p>تواصل مع صاحب صفحة «جوة الحكاية» أو تابع المحتوى على تيك توك.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="primary-button contact-link" href="https://wa.me/201039654480" target="_blank" rel="noopener noreferrer">دردشة واتساب</a>
+        <a class="secondary-button contact-link" href="https://www.tiktok.com/@gowa_el_hekaya" target="_blank" rel="noopener noreferrer">تابع واشترك على تيك توك</a>
+      </div>
+      <p class="contact-disclaimer">التواصل مع صاحب الصفحة ليس خدمة طوارئ أو بديلًا عن المختص النفسي. إذا كنت في خطر فوري، اتصل بخدمات الطوارئ المحلية أو بشخص تثق به.</p>
+    </footer>
+  </main>
+</body>
+</html>
